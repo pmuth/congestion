@@ -9,10 +9,13 @@ var participants = []
 var screens = []
 
 //Server's IP address
-app.set("ip", "192.168.2.249");
+//app.set("ip", "192.168.2.249");
 
 //Server's port number
-app.set("port", 8000);
+
+var port = process.env.PORT || 8000;
+
+//app.set("port", 8000);
 
 //Specify the views folder
 app.set("views", __dirname + "/views");
@@ -85,6 +88,12 @@ io.sockets.emit("newIndex", {participants: participants});
 
 });
 
-http.listen(app.get("port"), app.get("ip"), function() {
-	console.log("Server up and running. Go to http://" + app.get("ip") + ":" + app.get("port"));
+// http.listen(app.get("port"), app.get("ip"), function() {
+// 	console.log("Server up and running. Go to http://" + app.get("ip") + ":" + app.get("port"));
+// });
+
+
+
+http.listen(app.get("port"), function() {
+	console.log("Server up and running. Go to http://" + app.get("port"));
 });
