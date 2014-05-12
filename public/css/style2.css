@@ -1,0 +1,68 @@
+@font-face {
+font-family: Visitor;
+src: url(visitor1.ttf);
+}
+
+body 
+{
+	margin: 0;
+	background-color: #000000;
+	padding: 0;
+}
+
+#container {
+  position: absolute;
+  margin: -400px 0 0 -600px;
+  width: 100%;
+  vertical-align:center;
+  top: 50%;
+  left: 50%;
+
+}
+
+#congestion {
+
+	display: inline;
+	float: left;
+	width:  800px;
+	height: 800px;
+	background-color: #222;
+}
+
+#scoreBoard {
+	display: inline;
+	float: left;
+	width:  400px;
+	height: 800px;
+	background-color: #000000;
+}
+
+#score {
+	margin: 25px 0 0 25px;
+	color: #ffffff;
+	font-family: Visitor;
+	font-size: 48px
+}
+/* 
+#congestion {
+	position: absolute;
+	top:  50%;
+	left: 50%;
+	width:  800px;
+	height: 300px;
+	margin: -500px 0 0 -400px;
+	background-color: #222;
+}
+
+#score {
+position: absolute;
+top: 50%;
+left: 50%;
+width:  300px;
+	height: 800px;
+
+	background-color: #333;
+	margin: -500px 0 0 -700px;
+}
+
+*/

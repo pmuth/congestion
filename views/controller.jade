@@ -1,0 +1,21 @@
+doctype html
+html
+	head
+		script(src='/js/socket.io.min.js')    
+		//script(src='http://code.jquery.com/jquery-1.10.2.min.js')
+		script(src='/js/jquery-1.11.1.min.js')
+		script(src='/js/controller.js')
+		link(rel='stylesheet', href='/css/style.css')
+		title CONTROLLER
+	body
+		div#colors 
+		div(class="title", id="name") WHAT'S YOUR NAME?
+		input(class="textName" id="textName" type="text", name="name") 
+		div(class="button") NEXT
+		br
+		div(class="title", id="color") SELECT A COLOR
+		div(class="square", "style"="background-color:#7919FF;")
+		div(class="square", "style"="background-color:#00FF3E;")
+		div(class="square", "style"="background-color:#CC7C14;")
+		div(class="square", "style"="background-color:#B28C5A;")
+		canvas(id="controller" width="2000" height="2000")

@@ -1,0 +1,12 @@
+doctype html
+html
+	head
+		script(src='/js/socket.io.min.js')    
+		script(src='http://code.jquery.com/jquery-1.10.2.min.js')
+		script(src='/js/paper.js')
+		script(src='/js/congestionSocket.js')
+		link(rel='stylesheet', href='/css/style2.css')
+		title CONGESTION
+	body
+		canvas(id='congestion')
+		script(type='text/paperscript', src='/js/congestionSocket.js', canvas='congestion')

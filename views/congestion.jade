@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		script(src='/js/socket.io.min.js')    
+		//script(src='http://code.jquery.com/jquery-1.10.2.min.js')
+		script(src='/js/jquery-1.11.1.min.js')
+		script(src='/js/paper.js')
+		script(src='/js/congestion.js')
+		link(rel='stylesheet', href='/css/style2.css')
+		title CONGESTION
+	body
+		div(id='container')
+			div(id='scoreBoard', width=300, height=800)
+				div.inlineBlock
+				div#score
+			canvas(id='congestion', width=800, height=800)
+			script(type='text/paperscript', src='/js/congestion.js', canvas='congestion')
+			
