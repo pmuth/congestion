@@ -13,9 +13,9 @@ var screens = []
 
 //Server's port number
 
-var port = process.env.PORT || 8000;
+//var port = process.env.PORT || 8000;
 
-//app.set("port", 8000);
+app.set("port", process.env.PORT || 8000);
 
 //Specify the views folder
 app.set("views", __dirname + "/views");
