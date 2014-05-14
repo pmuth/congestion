@@ -13,7 +13,7 @@ var screens = []
 
 //Server's port number
 
-var port = 8000;
+var port = process.env.PORT || 8000;
 
 //app.set("port", 8000);
 
