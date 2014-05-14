@@ -396,7 +396,7 @@ function listParticipants(participants) {
     for (var i = 0; i < participants.length; i++) {
         $('#participants').append('<div class="square" id="' + participants[i].id + '" style="background-color:'+participants[i].color + '">' +
         participants[i].id + ' ' + (participants[i].id === sessionId ? '(You)' : '') + '<br /></span>');
-        console.log(participants[i].direction + "?????");
+        console.log(participants.length);
     }
 }
 
