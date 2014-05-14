@@ -35,6 +35,10 @@ app.get("/", function(request, response) {
 	response.render("index");
 });
 
+app.get("/controller", function(request, response) {
+	response.render("controller");
+});
+
 app.get("/controller2", function(request, response) {
 	response.render("controller2");
 });
